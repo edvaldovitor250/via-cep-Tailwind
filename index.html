@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via CEP</title>
+    <link href="./projetc/src/output.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="container mx-auto mt-5 text-center">
+
+        <h1 class="mb-4 text-3xl font-bold">Encontre endereços e o CEP</h1>
+        
+        <form id="cepForm" class="mb-3">
+            <div class="flex items-center">
+                <input type="text" class="w-full p-2 border border-gray-300 rounded-l-md" id="cepInput" placeholder="Informe o CEP ou endereço" required>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded-r-md" id="pesquisarBtn">
+                    <span><img src="./assets/img/icons8-lupa-30.png" alt="Lupa"></span>
+                </button>
+            </div>
+        </form>
+
+        <div id="cepInfo" class="mb-3"></div>
+
+        <div class="result-container mt-4">
+            <div class="flex justify-between mb-2" id="botoesAcoesContainer">
+                <div>
+                    <button class="bg-blue-500 text-white p-2 rounded" onclick="abrirMapa()" disabled>Abrir no Mapa</button>
+                </div>
+                <div>
+                    <button class="bg-green-500 text-white p-2 rounded" onclick="copiarInformacoes()" disabled>Copiar</button>
+                </div>
+                <div>
+                    <button class="bg-red-500 text-white p-2 rounded" id="reiniciarBtn" onclick="reiniciarDados()">Reiniciar</button>
+                </div>
+            </div>
+            <div id="resultadoCep"></div>
+        </div>
+
+    </div>
+
+<script src="./projetc/assets/main.js"></script>
+</body>
+</html>
