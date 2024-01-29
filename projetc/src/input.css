@@ -29,7 +29,7 @@ h1{
 .state-flag{
     display: flex;
     position: fixed;
-    left: 63%;
+    left: 59%;
     top: 50%;
-    transform: translate(40%, 140%);
+    transform: translate(300%, 120%);
 }
